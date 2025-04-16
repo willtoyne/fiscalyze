@@ -6,3 +6,4 @@ fpdf
 matplotlib
 SQLAlchemy
 scikit-learn
+reportlab

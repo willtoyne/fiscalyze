@@ -1590,6 +1590,6 @@ if __name__ == "__main__":
         import streamlit as st
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("🔒 [Privacy Policy](https://fiscalyze.co.uk/privacy)")
-st.sidebar.markdown("📜 [Terms of Service](https://fiscalyze.co.uk/terms)")
+st.sidebar.markdown("🔒 [Privacy Policy](Privacy_Policy)")
+st.sidebar.markdown("📜 [Terms of Service](Terms_of_Service)")
 st.sidebar.markdown("📧 [Contact Us](mailto:will.toyne@fiscalyze.co.uk)")

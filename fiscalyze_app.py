@@ -1587,3 +1587,9 @@ if __name__ == "__main__":
         data_input_page()
     elif st.session_state.page == "reports":
         reports_page()
+        import streamlit as st
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("🔒 [Privacy Policy](https://fiscalyze.co.uk/privacy)")
+st.sidebar.markdown("📜 [Terms of Service](https://fiscalyze.co.uk/terms)")
+st.sidebar.markdown("📧 [Contact Us](mailto:will.toyne@fiscalyze.co.uk)")

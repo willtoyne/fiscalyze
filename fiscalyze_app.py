@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,10 +18,11 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, 
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
 import matplotlib
-matplotlib.use('Agg')
-
+from PIL import Image
 logo = Image.open("assets/logo.png")
 st.image(logo, width=200)
+matplotlib.use('Agg')
+
 
 #################################################
 # DATABASE SETUP

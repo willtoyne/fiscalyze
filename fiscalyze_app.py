@@ -1,9 +1,4 @@
 import streamlit as st
-st.set_page_config(
-    page_title="Fiscalyze",
-    page_icon="https://raw.githubusercontent.com/willtoyne/fiscalyze/main/images/logo.png",
-    layout="wide",
-)
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -26,7 +21,11 @@ import matplotlib
 from PIL import Image
 matplotlib.use('Agg')
 
-
+st.set_page_config(
+    page_title="Fiscalyze",
+    page_icon="https://raw.githubusercontent.com/willtoyne/fiscalyze/main/images/logo.png",
+    layout="wide",
+)
 #################################################
 # DATABASE SETUP
 #################################################

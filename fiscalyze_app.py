@@ -22,7 +22,7 @@ import matplotlib
 matplotlib.use('Agg')
 # Load and display logo
 logo = Image.open("logo.png")
-st.image(logo, width=200)  # You can adjust the width
+st.image(logo, width=200)
 
 #################################################
 # DATABASE SETUP

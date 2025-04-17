@@ -21,14 +21,16 @@ import matplotlib
 from PIL import Image
 matplotlib.use('Agg')
 
+
+#################################################
+# DATABASE SETUP
+#################################################
+
 st.set_page_config(
     page_title="Fiscalyze",
     page_icon="https://raw.githubusercontent.com/willtoyne/fiscalyze/main/images/logo.png",
     layout="wide",
 )
-#################################################
-# DATABASE SETUP
-#################################################
 
 # Use SQLite by default if no DATABASE_URL is specified
 DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///fiscalyze.db')

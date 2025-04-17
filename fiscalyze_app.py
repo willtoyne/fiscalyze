@@ -19,7 +19,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
 import matplotlib
 from PIL import Image
-logo = Image.open("assets/logo.png")
+logo = Image.open("logo.png")
 st.image(logo, width=200)
 matplotlib.use('Agg')
 

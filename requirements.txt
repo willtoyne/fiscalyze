@@ -7,3 +7,4 @@ matplotlib
 SQLAlchemy
 scikit-learn
 reportlab
+pillow

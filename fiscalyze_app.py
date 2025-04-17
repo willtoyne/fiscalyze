@@ -1,8 +1,5 @@
 import streamlit as st
 from PIL import Image
-# Load and display logo
-logo = Image.open("logo.png")
-st.image(logo, width=200)  # You can adjust the width
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -23,6 +20,9 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
 import matplotlib
 matplotlib.use('Agg')
+# Load and display logo
+logo = Image.open("logo.png")
+st.image(logo, width=200)  # You can adjust the width
 
 #################################################
 # DATABASE SETUP

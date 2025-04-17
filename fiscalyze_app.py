@@ -1,4 +1,9 @@
 import streamlit as st
+st.set_page_config(
+    page_title="Fiscalyze",
+    page_icon="https://raw.githubusercontent.com/willtoyne/fiscalyze/main/images/logo.png",
+    layout="wide",
+)
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,8 +24,6 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
 import matplotlib
 from PIL import Image
-logo = Image.open("logo.png")
-st.image(logo, width=200)
 matplotlib.use('Agg')
 
 

@@ -21,7 +21,7 @@ from reportlab.lib.units import inch
 import matplotlib
 matplotlib.use('Agg')
 
-logo = Image.open("logo.png")
+logo = Image.open("assets/logo.png")
 st.image(logo, width=200)
 
 #################################################

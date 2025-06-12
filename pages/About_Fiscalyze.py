@@ -1,3 +1,5 @@
+import streamlit as st
+
 with st.sidebar.expander("About Fiscalyze"):
     st.markdown("""
     **Fiscalyze** is a financial forecasting tool designed for SMEs and startups.  

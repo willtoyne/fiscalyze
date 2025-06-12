@@ -1152,7 +1152,7 @@ def manual_data_entry():
             st.success(f"Financial data for {date.strftime('%B %Y')} added successfully!")
             
             # Redirect to dashboard
-            if st.button("Go to Dashboard"):
+            if st.form_submit_button("Go to Dashboard"):
                 st.switch_page("01_Dashboard")
 
 def view_current_data():

@@ -283,7 +283,8 @@ def add_monthly_data(existing_data, new_data_dict):
     updated_data = pd.concat([existing_data, new_row], ignore_index=True)
     
     # Sort by date
-    updated_data = updated_data.sort_values('Date').reset_index(drop=True)
+    updated_data['Date'] = pd.to_datetime(updated_data['Date'], errors='coerce')
+    updated_data = updated_data.sort_values('Date', na_position='last').reset_index(drop=True)
     
     return updated_data
 

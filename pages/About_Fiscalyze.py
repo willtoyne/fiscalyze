@@ -1,4 +1,4 @@
-with st.sidebar.expander("📖 About Fiscalyze"):
+with st.sidebar.expander("About Fiscalyze"):
     st.markdown("""
     **Fiscalyze** is a financial forecasting tool designed for SMEs and startups.  
     It helps businesses make smarter financial decisions using data-driven predictions.

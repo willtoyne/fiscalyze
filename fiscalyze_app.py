@@ -35,7 +35,7 @@ import matplotlib
 
 matplotlib.use('Agg')
 
-st.sidebar.image("logo.png", use_conatiner_width=True)
+st.sidebar.image("logo.png", use_column_width=True)
 
 with open("README.md", "r") as readme:
     st.sidebar.markdown(readme.read(), unsafe_allow_html=True)

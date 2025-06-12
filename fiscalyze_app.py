@@ -26,6 +26,7 @@ from reportlab.lib import colors
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, Image
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
+from pathlib import Path
 import matplotlib
 
 #################################################
@@ -33,6 +34,9 @@ import matplotlib
 #################################################
 
 matplotlib.use('Agg')
+
+with open("README.md", "r") as readme:
+    st.sidebar.markdown(readme.read(), unsafe_allow_html=True)
 
 # Use SQLite by default if no DATABASE_URL is specified
 DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///fiscalyze.db')

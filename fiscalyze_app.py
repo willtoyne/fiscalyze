@@ -19,7 +19,6 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
 import matplotlib
 from PIL import Image
-matplotlib.use('Agg')
 
 
 #################################################
@@ -31,6 +30,9 @@ st.set_page_config(
     page_icon="https://raw.githubusercontent.com/willtoyne/fiscalyze/main/images/logo.png",
     layout="wide",
 )
+
+import matplotlib
+matplotlib.use('Agg')
 
 # Use SQLite by default if no DATABASE_URL is specified
 DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///fiscalyze.db')

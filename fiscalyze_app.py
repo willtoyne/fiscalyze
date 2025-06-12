@@ -1,9 +1,11 @@
 import streamlit as st
 
+# Set page configuration
 st.set_page_config(
-    page_title="Fiscalyze",
-    page_icon="https://raw.githubusercontent.com/willtoyne/fiscalyze/main/images/logo.png",
+    page_title="Fiscalyze - Financial Forecasting",
+    page_icon="📊",
     layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 import pandas as pd
@@ -1216,14 +1218,6 @@ def initialize_app():
         return sample_data
     else:
         return db_data
-
-# Set page configuration
-st.set_page_config(
-    page_title="Fiscalyze - Financial Forecasting",
-    page_icon="📊",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 # Define app pages
 def landing_page():
